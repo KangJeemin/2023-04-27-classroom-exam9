@@ -7,7 +7,14 @@ import inquirer from "inquirer";
 
 
 function oddElevator(floorNumber) {
-
+    if(floorNumber == 10){
+        console.log("10층을 누르셨습니다.")
+    }
+    else{
+        if(floorNumber % 2 !=1) {
+            
+        }
+    }
 }
 
 function evenElevator(floorNumber){
