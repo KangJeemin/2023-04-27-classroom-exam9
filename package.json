@@ -1,0 +1,23 @@
+{
+  "name": "2023-04-27-classroom-exam9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "강지민.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KangJeemin/2023-04-27-classroom-exam9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KangJeemin/2023-04-27-classroom-exam9/issues"
+  },
+  "homepage": "https://github.com/KangJeemin/2023-04-27-classroom-exam9#readme",
+  "dependencies": {
+    "inquirer": "^9.2.0"
+  },
+  "type": "module"
+}
