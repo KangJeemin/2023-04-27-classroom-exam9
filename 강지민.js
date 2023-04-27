@@ -27,5 +27,13 @@ inquirer
         
     ]))
     .then((answers)=>{
-        console.log('Answers:',answers.name);
+        if(answers.floor)
+            if(answers.floor%2==0){
+             console.log("홀수층만 입력 가능합니다");
+             return;
+             }
+        setTimeout(()=>{
+            console.log(answers.floor+"층에 도착했습니다.");
+
+        },1000)
     });
