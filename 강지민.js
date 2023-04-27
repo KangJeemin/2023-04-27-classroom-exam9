@@ -6,15 +6,11 @@ import inquirer from "inquirer";
 
 
 
-function oddElevator(floorNumber) {
-    if(floorNumber == 10){
-        console.log("10층을 누르셨습니다.")
-    }
-    else{
-        if(floorNumber % 2 !=1) {
-            
-        }
-    }
+function oddElevator(array) {
+  let array1 = []
+  array1=array
+  console.log("문을 열겠습니다")
+  return array1;
 }
 
 function evenElevator(floorNumber){
@@ -22,24 +18,14 @@ function evenElevator(floorNumber){
 }
 
 inquirer
-    .prompt(exampleOne([
+    .prompt(oddElevator([
         {
             type:'input',
-            name:'name',
-            message:"당신의 이름은 무엇입니까?"
+            name:'floor',
+            message:"몇층을 가시겠습니까?"
         },
-        {
-            type:'list',
-            name:'like food',
-            message: '당신이 좋아하는 음식은 무엇입니까?',
-            choices:['바나나우유','딸기우유','초코우유','그냥우유'],
-        },
-        {
-            type:'confirm',
-            name:'confirm',
-            message:'확실합니까?'
-        },
+        
     ]))
     .then((answers)=>{
-        console.log('Answers:',answers);
+        console.log('Answers:',answers.name);
     });
